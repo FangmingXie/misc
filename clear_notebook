@@ -1,4 +1,5 @@
 #!/bin/bash
 
 input=$1
-jupyter nbconvert $input --to notebook --ClearOutputPreprocessor.enabled=True
+outdir="./"
+jupyter nbconvert $input --to notebook --ClearOutputPreprocessor.enabled=True --output-dir $outdir
