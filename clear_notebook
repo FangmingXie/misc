@@ -1,0 +1,4 @@
+#!/bin/bash
+
+input=$1
+jupyter nbconvert $input --to notebook --ClearOutputPreprocessor.enabled=True
